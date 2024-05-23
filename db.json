@@ -1,0 +1,85 @@
+{
+    "microphones": [
+      {
+        "id": 1,
+        "brand": "",
+        "model": "",
+        "polar-pattern": "",
+        "country": "",
+        "image": ""
+      },
+      {
+        "id": 2,
+        "brand": "",
+        "model": "",
+        "polar-pattern": "",
+        "country": "",
+        "image": ".jpg"
+      },
+      {
+        "id": 3,
+        "brand": "",
+        "model": "",
+        "polar-pattern": "",
+        "country": "",
+        "image": ""
+      },
+      {
+        "id": 4,
+        "brand": "",
+        "model": "",
+        "polar-pattern": "",
+        "country": "",
+        "image": ".jpg"
+      },
+      {
+        "id": 5,
+        "brand": "",
+        "model": "",
+        "polar-pattern": "",
+        "country": "",
+        "image": ""
+      },
+      {
+        "id": 6,
+        "brand": "",
+        "model": "",
+        "polar-pattern": "",
+        "country": "",
+        "image": ".jpg"
+      },
+      {
+        "id": 7,
+        "brand": "",
+        "model": "",
+        "polar-pattern": "",
+        "country": "",
+        "image": ""
+      },
+      {
+        "id": 8,
+        "brand": "",
+        "model": "",
+        "polar-pattern": "",
+        "country": "",
+        "image": ".jpg"
+      },
+      {
+        "id": 9,
+        "brand": "",
+        "model": "",
+        "polar-pattern": "",
+        "country": "",
+        "image": ""
+      },
+      {
+        "id": 10,
+        "brand": "",
+        "model": "",
+        "polar-pattern": "",
+        "country": "",
+        "image": ".jpg"
+      }
+    ]
+}
+    
