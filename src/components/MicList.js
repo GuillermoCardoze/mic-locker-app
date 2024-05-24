@@ -1,6 +1,6 @@
 
 import React from "react";
-import MicCard from "./MicCard";
+// import MicCard from "./MicCard";
 
 function MicList() {
   return (
