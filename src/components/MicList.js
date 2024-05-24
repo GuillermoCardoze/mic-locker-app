@@ -1,10 +1,25 @@
 
 import React from "react";
-// import MicCard from "./MicCard";
+import MicCard from "./MicCard";
 
-function MicList() {
+function MicList({ microphones }) {
+  const micCards = microphones.map(mic => {
+    return <MicCard 
+    key={mic.id}
+    brand={mic.brand}
+    model={mic.model}
+    polarPattern={mic.polarpattern}
+    country={mic.country}
+    quantity={mic.quantity}
+    image = {mic.image}
+
+    />
+  })
+
+
+
   return (
-    <ul className="cards">{/* render MicCards components in here */}</ul>
+    <ul className="cards">{micCards}</ul>
   );
 }
 
