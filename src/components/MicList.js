@@ -8,7 +8,7 @@ function MicList({ microphones }) {
     key={mic.id}
     brand={mic.brand}
     model={mic.model}
-    polarPattern={mic.polarpattern}
+    pattern={mic.pattern}
     country={mic.country}
     quantity={mic.quantity}
     image = {mic.image}

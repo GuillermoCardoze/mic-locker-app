@@ -10,7 +10,7 @@ function NewMicForm() {
         <input type="text" name="name" placeholder="Polar Pattern" />
         <input type="text" name="name" placeholder="Country" />
         <input type="text" name="image" placeholder="Image URL" />
-        <input type="number" name="quantity" step="0.01" placeholder="Quantity" />
+        <input type="number" name="quantity" placeholder="Quantity" />
         <button type="submit">Add Mic</button>
       </form>
     </div>
