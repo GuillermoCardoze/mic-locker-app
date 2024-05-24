@@ -20,11 +20,19 @@ function MicPage() {
            mics.country.toLowerCase().includes(search.toLowerCase()) ||
            mics.pattern.toLowerCase().includes(search.toLowerCase()) 
   })
+function addNewMic(micData){
 
+
+
+}
 
   return (
     <main>
-      <NewMicForm />
+      <NewMicForm 
+      micropohones={microphones} 
+      setMicrophones={setMicrophones} 
+      addNewMic={addNewMic}
+      />
       <Search setSearch={setSearch}/>
       <MicList microphones={micUpdate}/>
     </main>
