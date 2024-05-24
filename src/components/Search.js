@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Search() {
+function Search({ setSearch }) {
+
+
   return (
     <div className="searchbar">
       <label htmlFor="search">Search Microphones:</label>
-      <input
+      <input 
         type="text"
         id="search"
         placeholder="Search Microphones..."
-        onChange={(e) => console.log("Searching...")}
+        onChange={(e) => setSearch(e.target.value)}
       />
     </div>
   );
