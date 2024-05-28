@@ -13,9 +13,23 @@ function NewMicForm({addNewMic, microphones, setMicrophones}) {
 
   function handleOnSubmit(e){
     e.preventDefault()
-    addNewMic(formData)
+    // addNewMic(formData)
 
-    setMicrophones(microphones => [...microphones, formData])
+    const configObj ={
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    }
+
+    fetch("http://localhost:3000/microphones", configObj)
+      .then(res => res.json())
+      .then(newMicData => {
+        addNewMic(newMicData)
+      });
+
+    // setMicrophones(microphones => [...microphones, formData])
     setFormData(defaultState)
     
    
@@ -24,7 +38,7 @@ function NewMicForm({addNewMic, microphones, setMicrophones}) {
   function handleChange(e){
     const changeKey = e.target.name
     setFormData((updateData)=> ({...updateData, [changeKey]: e.target.value}))
-
+    console.log(formData)
   }
 
 

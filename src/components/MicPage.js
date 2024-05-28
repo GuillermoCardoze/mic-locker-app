@@ -20,9 +20,8 @@ function MicPage() {
            mics.country.toLowerCase().includes(search.toLowerCase()) ||
            mics.pattern.toLowerCase().includes(search.toLowerCase()) 
   })
-function addNewMic(micData){
-
-
+function addNewMic(formData){
+    setMicrophones(microphones => [...microphones, formData])
 
 }
 
