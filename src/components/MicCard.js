@@ -1,6 +1,11 @@
 import React from "react";
 
 function MicCard({ brand, model, pattern, quantity, country, image }) {
+
+  function handleDelete(){
+
+  }
+  
   return (
     <li className="card">
       <img src={image} alt={model} />
@@ -9,12 +14,6 @@ function MicCard({ brand, model, pattern, quantity, country, image }) {
       <h4>Polar-Pattern: {pattern}</h4>
       <h4>Quantity: {quantity}</h4>
       <h4>Country: {country}</h4>
-      {/* <p>Price: {"plant price"}</p>
-      {true ? (
-        <button className="primary">In Stock</button>
-      ) : (
-        <button>Out of Stock</button>
-      )} */}
     </li>
   );
 }
