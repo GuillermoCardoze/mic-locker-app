@@ -13,19 +13,19 @@ function NavBar() {
         Home
       </NavLink>
       <NavLink
-        to="/about"
+        to="/form"
         className="nav-link"
       >
-        About
+        Add Mic
       </NavLink>
       <NavLink
-        to="/login"
+        to="/mics"
         className="nav-link"
       >
-        Login
+        Mic Locker
       </NavLink>
     </nav>
   );
 };
 
-export default NavBar;
+export default NavBar
