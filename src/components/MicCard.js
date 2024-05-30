@@ -2,10 +2,6 @@ import React from "react";
 
 function MicCard({ brand, model, pattern, quantity, country, image }) {
 
-  function handleDelete(){
-
-  }
-  
   return (
     <li className="card">
       <img src={image} alt={model} />

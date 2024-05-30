@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function NewMicForm({addNewMic, microphones, setMicrophones}) {
+function NewMicForm({addNewMic}) {
   const defaultState = {
     brand: "",
     model: "",
