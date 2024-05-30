@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from "react";
 import Header from "./Header";
 import MicPage from "./MicPage";
+import About from "../pages/About";
 import NewMicForm from "./NewMicForm";
+import NavBar from "../pages/NavBar";
+
 
 function App() {
   const [microphones, setMicrophones] = useState([])
@@ -29,11 +33,17 @@ function addNewMic(formData){
 
   return (
 
-    <div className="app">
+    <Router>
       <Header />
-      <NewMicForm addNewMic={addNewMic}/>
-      <MicPage setSearch={setSearch} microphones={micUpdate}/>
+    <div className="app">
+      <NavBar />
     </div>
+    <Routes>
+     <Route path="/" element={<About />}/>
+     <Route path="/form" element={<NewMicForm addNewMic={addNewMic} />}/>
+     <Route path="/mics" element={<MicPage setSearch={setSearch} microphones={micUpdate}/>}/>
+    </Routes>
+    </Router>
   );
 }
 

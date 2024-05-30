@@ -8,7 +8,7 @@ function NavBar() {
         to="/"
         className="nav-link"
       >
-        Home
+        About
       </NavLink>
       <NavLink
         to="/form"
