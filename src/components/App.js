@@ -34,14 +34,16 @@ function addNewMic(formData){
   return (
 
     <Router>
+      <header>
       <Header />
+      </header>
     <div className="app">
       <NavBar />
     </div>
     <Routes>
      <Route path="/" element={<About />}/>
-     <Route path="/form" element={<NewMicForm addNewMic={addNewMic} />}/>
-     <Route path="/mics" element={<MicPage setSearch={setSearch} microphones={micUpdate}/>}/>
+     <Route path="/add" element={<NewMicForm addNewMic={addNewMic} />}/>
+     <Route path="/microphones" element={<MicPage setSearch={setSearch} microphones={micUpdate}/>}/>
     </Routes>
     </Router>
   );

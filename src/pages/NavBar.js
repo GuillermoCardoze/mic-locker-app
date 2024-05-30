@@ -11,13 +11,13 @@ function NavBar() {
         About
       </NavLink>
       <NavLink
-        to="/form"
+        to="/add"
         className="nav-link"
       >
         Add Mic
       </NavLink>
       <NavLink
-        to="/mics"
+        to="/microphones"
         className="nav-link"
       >
         Mic Locker

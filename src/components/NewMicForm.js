@@ -1,6 +1,7 @@
 import React, {useState} from "react";
+import { useNavigate } from "react-router-dom"
 
-function NewMicForm({addNewMic}) {
+function NewMicForm({addNewMic, microphones, setMicrophones}) {
   const defaultState = {
     brand: "",
     model: "",
@@ -10,6 +11,7 @@ function NewMicForm({addNewMic}) {
     image: ""
   }
   const [formData, setFormData] = useState(defaultState)
+  const navigate = useNavigate()
 
   function handleOnSubmit(e){
     e.preventDefault()
@@ -27,6 +29,7 @@ function NewMicForm({addNewMic}) {
       .then(res => res.json())
       .then(newMicData => {
         addNewMic(newMicData)
+        navigate("/microphones")
       });
 
     // setMicrophones(microphones => [...microphones, formData])
