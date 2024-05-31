@@ -1,8 +1,10 @@
 :root {
-  --green: rgb(39, 189, 39);
+  --red: rgb(152, 4, 4);
 }
 
 * {
+  background-color: black;
+  font-family: "DM Sans", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,7 +15,23 @@ body {
 }
 
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: mic;
+  color: rgb(244, 247, 245);
+}
+
+.title {
+  color: rgb(123, 5, 5)
+}
+
+p {
+  text-align: center;
+  padding: 0.5rem 0;
+  color: rgb(123, 5, 5)
+}
+.card-info {
+  text-align: center;
+  padding: 0.5rem 0;
+  color: rgb(168, 112, 112)
 }
 
 button {
@@ -38,6 +56,7 @@ header h1 {
   font-weight: 900;
   text-align: center;
   padding: 0.5rem 0;
+  color: orange
 }
 
 .logo {
@@ -51,30 +70,45 @@ main {
   padding: 0 1rem;
 }
 
-.new-plant-form {
+.new-mic-form {
   padding: 2rem 1rem;
   margin: 2rem 0;
-  background-color: rgba(181, 250, 181, 0.5);
+  background-color: rgb(7, 0, 0);
 }
 
-.new-plant-form form {
+.new-mic-form form {
   display: flex;
   justify-content: center;
 }
 
-.new-plant-form input {
+.new-mic-form input {
   margin-right: 2rem;
   flex: 1;
 }
 
-.new-plant-form button {
-  width: 150px;
+.new-mic-form button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 6px 6px;
+  background: rgb(129, 2, 2);
+  text-decoration: none;
+  text-align: center;
+  font-size: min(10vw, 15px);
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.add-button:hover{
+  background-color: rgb(168, 68, 68);
 }
 
 .searchbar {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  color: rgb(123, 5, 5)
 }
 
 label {
@@ -90,6 +124,8 @@ input {
   border-bottom: 2px solid gray;
   transition: all 0.2s;
   width: 100%;
+  border-radius: 5px;
+  background-color: rgb(248, 245, 245);
 }
 
 input:focus {
@@ -103,10 +139,13 @@ input:focus {
 
 .card {
   margin: 1rem;
+  color: rgb(123 ,5, 5);
 }
 
 .card img {
   width: 100%;
+  border-radius: 15px
+
 }
 
 .card button {

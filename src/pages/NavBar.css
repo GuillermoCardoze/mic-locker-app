@@ -1,16 +1,27 @@
 .nav-link{
     display: inline-block;
     box-sizing: border-box;
-    width: 60px;
-    padding: 5px;
+    padding: 10px;
     margin: 0 6px 6px;
-    background: blue;
+    background: rgb(129, 2, 2);
     text-decoration: none;
     text-align: center;
-    font-size: min(10vw, 15px) ;
+    font-size: min(10vw, 15px);
     color: white;
+    border-radius: 10px;
+    width: 100px;
+
+}
+
+.nav-link:hover{
+    background-color: rgb(168, 68, 68);
 }
 
 .active {
-    color: red;
+    background-color: rgb(255, 255, 255);
+    color: rgb(129, 2 , 2);
+    border-color: rgb(129, 2, 2,);
+    border-width: 1px;
+    border: solid;
+    
 }

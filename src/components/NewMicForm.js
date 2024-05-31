@@ -91,7 +91,7 @@ function NewMicForm({addNewMic, microphones, setMicrophones}) {
          value={formData.quantity}
          onChange={handleChange} 
         />
-        <button type="submit">Add Mic</button>
+        <button className="add-button" type="submit">Add Mic</button>
       </form>
     </div>
   );

@@ -5,11 +5,11 @@ function MicCard({ brand, model, pattern, quantity, country, image }) {
   return (
     <li className="card">
       <img src={image} alt={model} />
-      <h4>Mic Brand: {brand}</h4>
-      <h4>Mic Model: {model}</h4>
-      <h4>Polar-Pattern: {pattern}</h4>
-      <h4>Quantity: {quantity}</h4>
-      <h4>Country: {country}</h4>
+      <h4>Mic Brand:</h4> <p className="card-info">{brand}</p>
+      <h4>Mic Model:</h4> <p className="card-info">{model}</p>
+      <h4>Polar-Pattern:</h4> <p className="card-info">{pattern}</p>
+      <h4>Quantity:</h4> <p className="card-info">{quantity}</p>
+      <h4>Country:</h4> <p className="card-info">{country}</p>
     </li>
   );
 }

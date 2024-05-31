@@ -12,7 +12,6 @@ function MicList({ microphones }) {
     country={mic.country}
     quantity={mic.quantity}
     image = {mic.image}
-
     />
   })
 
