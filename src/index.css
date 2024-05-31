@@ -140,11 +140,14 @@ input:focus {
 .card {
   margin: 1rem;
   color: rgb(123 ,5, 5);
+  border: solid;
+  border-width: 2px;
+  border-radius: 7px;
 }
 
 .card img {
   width: 100%;
-  border-radius: 15px
+  border-radius: 10px
 
 }
 
