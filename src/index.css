@@ -20,13 +20,15 @@ h2 {
 }
 
 .title {
-  color: rgb(123, 5, 5)
+  color: rgb(123, 5, 5);
+  font-size: 60px;
 }
 
-p {
+.about {
   text-align: center;
   padding: 0.5rem 0;
-  color: rgb(123, 5, 5)
+  color: rgb(123, 5, 5);
+  font-size: 25px;
 }
 .card-info {
   text-align: center;
