@@ -39,8 +39,8 @@ function NewMicForm({ addNewMic }) {
   }
 
   function handleChange(e){
-    const changeKey = e.target.name
-    setFormData((updateData)=> ({...updateData, [changeKey]: e.target.value}))
+    const { name, value } = e.target
+    setFormData((updateData)=> ({...updateData, [name]: value}))
     console.log(formData)
   }
 
