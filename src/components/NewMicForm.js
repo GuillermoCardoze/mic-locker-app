@@ -33,12 +33,8 @@ function NewMicForm({ addNewMic }) {
 
       });
 
-    // setMicrophones(microphones => [...microphones, formData])
-
     // clears out form to defalutState
     setFormData(defaultState)
-    
-   
   }
 
   function handleChange(e){

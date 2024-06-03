@@ -9,9 +9,10 @@ import NavBar from "../pages/NavBar";
 
 
 function App() {
-  const [microphones, setMicrophones] = useState([])
+  const [microphones, setMicrophones] = useState([]) //empty dependecy array
   const [search, setSearch] = useState("")
 
+  //GET request
   useEffect(()=>{
     fetch("http://localhost:3000/microphones")
     .then(res => res.json())

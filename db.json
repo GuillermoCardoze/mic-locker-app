@@ -89,6 +89,15 @@
       "pattern": "Omnidirectional",
       "country": "Germany",
       "image": "https://media.guitarcenter.com/is/image/MMGS7/L75976000002000-00-200x200.jpg"
+    },
+    {
+      "id": "9002",
+      "brand": "new mic",
+      "model": "asdf",
+      "pattern": "pattern",
+      "quantity": "3",
+      "country": "hereeeee",
+      "image": "https://media.guitarcenter.com/is/image/MMGS7/H90480000000000-00-600x600.jpg"
     }
   ]
 }
