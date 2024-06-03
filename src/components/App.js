@@ -25,8 +25,12 @@ function App() {
            mics.country.toLowerCase().includes(search.toLowerCase()) ||
            mics.pattern.toLowerCase().includes(search.toLowerCase()) 
   })
+
+
+  // Helper function to pass down to NewMicForm
 function addNewMic(formData){
-    setMicrophones(microphones => [...microphones, formData])
+    setMicrophones(microphones => [...microphones, formData]) // unpacked microphones and adding new formData to the original array of microphones
+
 
 }
 

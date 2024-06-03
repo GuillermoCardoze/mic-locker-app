@@ -29,19 +29,22 @@ function NewMicForm({ addNewMic }) {
       .then(res => res.json())
       .then(newMicData => {
         addNewMic(newMicData)
-        navigate("/microphones")
+        navigate("/microphones") //directs form to MicPage to see all mics includeing new mic after submitting form
+
       });
 
     // setMicrophones(microphones => [...microphones, formData])
+
+    // clears out form to defalutState
     setFormData(defaultState)
     
    
   }
 
   function handleChange(e){
-    const { name, value } = e.target
-    setFormData((updateData)=> ({...updateData, [name]: value}))
-    console.log(formData)
+    const { name, value } = e.target //destrudctured name and value set to const
+    setFormData(({...formData, [name]: value})) 
+    // console.log(formData)
   }
 
 
