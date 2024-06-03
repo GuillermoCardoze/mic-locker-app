@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"
 
-function NewMicForm({addNewMic}) {
+function NewMicForm({ addNewMic }) {
   const defaultState = {
     brand: "",
     model: "",

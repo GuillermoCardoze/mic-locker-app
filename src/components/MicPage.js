@@ -1,7 +1,7 @@
 import MicList from "./MicList";
 import Search from "./Search";
 
-function MicPage({microphones, setSearch}) {
+function MicPage({ microphones, setSearch }) {
  
   return (
     <div className="mic-container">
