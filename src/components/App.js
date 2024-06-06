@@ -31,9 +31,12 @@ function App() {
   // Helper function to pass down to NewMicForm
 function addNewMic(formData){
     setMicrophones(microphones => [...microphones, formData]) // unpacked microphones and adding new formData to the original array of microphones
-
-
 }
+
+ function handleRemoveMic(id) {
+  const newMicsList = microphones.filter((mic) => mic.id !== id)
+  setMicrophones(newMicsList)
+ }
 
 
   return (
@@ -48,7 +51,7 @@ function addNewMic(formData){
     <Routes>
      <Route path="/" element={<About />}/>
      <Route path="/add" element={<NewMicForm addNewMic={addNewMic} />}/>
-     <Route path="/microphones" element={<MicPage setSearch={setSearch} microphones={micUpdate}/>}/>
+     <Route path="/microphones" element={<MicPage setSearch={setSearch} microphones={micUpdate} handleRemoveMic={handleRemoveMic} />}/>
     </Routes>
     </Router>
   );
