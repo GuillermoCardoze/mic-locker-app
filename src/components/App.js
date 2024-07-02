@@ -6,6 +6,7 @@ import MicPage from "./MicPage";
 import About from "../pages/About";
 import NewMicForm from "./NewMicForm";
 import NavBar from "../pages/NavBar";
+// import WordCounterForm from "./WordCounterForm"; ///live coding assessment. 
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     .then(mics => setMicrophones(mics))
     .catch(error => console.error(error))
   },[])
+
 
   const micUpdate = microphones.filter(mics => {
     return mics.brand.toLowerCase().includes(search.toLowerCase()) || 
@@ -52,9 +54,14 @@ function addNewMic(formData){
      <Route path="/" element={<About />}/>
      <Route path="/add" element={<NewMicForm addNewMic={addNewMic} />}/>
      <Route path="/microphones" element={<MicPage setSearch={setSearch} microphones={micUpdate} handleRemoveMic={handleRemoveMic} />}/>
+     {/* <Route path="/wordCounterForm" element = {<WordCounterForm />} />  live coding assessment */}
     </Routes>
     </Router>
   );
 }
 
 export default App;
+
+// add a route, /wordCounterForm
+// have it render a component: WordCounterForm
+// start by just displaying an h1 with the text hello world and confirm that works

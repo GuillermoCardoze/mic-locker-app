@@ -11,6 +11,8 @@ function NewMicForm({ addNewMic }) {
     image: ""
   }
   const [formData, setFormData] = useState(defaultState)
+  const stateReturn = useState("")
+  console.log(stateReturn)
   const navigate = useNavigate()
 
   function handleOnSubmit(e){
